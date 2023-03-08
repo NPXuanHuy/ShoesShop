@@ -1,0 +1,83 @@
+.cart {
+    margin: 100px 0;
+    h1 {
+        @include text($fs-40, $fw-300, $color-black);
+        border-bottom: 1px solid $color-gray-1;
+        padding-bottom: 50px;
+        margin-bottom: 100px;
+    }
+    table {
+        thead {
+            margin-bottom: 15px;
+            th {
+                font-weight: $fw-400;
+            }
+            tr:first-child {
+                background-color: $color-gray-3;
+            }
+        }
+        .w-250 {
+            width: 250px;
+        }
+        .w-200 {
+            width: 200px;
+        }
+        td {
+            vertical-align: middle;
+        }
+        .form-check-input {
+            position: relative;
+            margin: 0;
+        }
+        .td-img {
+            width: 100px;
+            img {
+                width: 100%;
+            }
+        }
+        .td-name {
+            width: 300px;
+        }
+        .quatity {
+            span {
+                background-color: $color-btn-violet;
+                color: #fff;
+                box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
+                border-radius: 3px;
+                padding: 8px 14px;
+                font-weight: $fw-600;
+                cursor: pointer;
+            }
+            input {
+                width: 100px;
+                padding: 5px;
+                background-color: $color-gray-1;
+                text-align: center;
+                border: none;
+                margin: 0 10px;
+            }
+        }
+        .button {
+            text-align: right;
+            a {
+                padding: 5px 20px;
+                border: none;
+                box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
+                &:first-child {
+                    background-color: $color-btn-violet;
+                }
+                &:last-child {
+                    background-color: $color-red;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .btn-warning {
+        background: linear-gradient(180deg, #f21299 0%, #1b02b5 100%);
+        padding: 5px 20px;
+        text-align: right;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.14), 0px 3px 14px rgba(0, 0, 0, 0.12), 0px 5px 5px rgba(0, 0, 0, 0.2);
+        color: $color-white;
+    }
+}
